@@ -316,7 +316,9 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.socialmedialink:hover,
+.socialmedialink:hover {
+  background-color: #404bbf;
+}
 .socialmedialink:focus {
   background-color: #404bbf;
 }
