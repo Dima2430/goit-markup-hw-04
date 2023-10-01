@@ -291,6 +291,7 @@ img {
   gap: 24px;
   padding-bottom: 32px;
 }
+
 .socialmediaitem {
   width: 40px;
   height: 40px;
@@ -473,4 +474,12 @@ img {
 }
 .footeritem {
   margin-right: 120px;
+}
+.footersocialmedialist {
+  display: flex;
+  gap: 16px;
+}
+.footer .socialmedialink:hover,
+.socialmedialink:focus {
+  background-color: #31d0aa;
 }
