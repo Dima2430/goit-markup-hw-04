@@ -47,6 +47,10 @@ img {
   color: #2e2f42;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .headerlink:hover,
 .headerlink:focus,
@@ -64,6 +68,10 @@ img {
   padding-top: 25.5px;
   padding-bottom: 25.5px;
   margin-right: 76px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .footerlogo {
   font-family: "Raleway", sans-serif;
@@ -77,6 +85,10 @@ img {
 }
 .web {
   color: #2e2f42;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .logolink:hover,
 .web:hover,
@@ -99,6 +111,10 @@ img {
 
 .logolink {
   color: #f4f4fd;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .header {
   background: var(--WHITE, #fff);
@@ -129,6 +145,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .address-link:hover,
 .address-link:focus {
@@ -138,6 +158,14 @@ img {
   background: var(--NAVY-BLUE, #2e2f42);
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .mainheader {
   color: var(--WHITE, #fff);
@@ -167,6 +195,10 @@ img {
   margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .orderbutton:hover {
   background-color: #404bbf;
@@ -188,6 +220,18 @@ img {
 .strategylistitem {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
+.strategyicon {
+  display: block;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  background: var(--CLOUD, #f4f4fd);
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  padding: 24px 100px;
+}
+
 .strategyheader {
   color: var(--NAVY-BLUE, #2e2f42);
   margin-bottom: 8px;
@@ -197,6 +241,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+
 .strategyparagraf {
   color: var(--SLATE, #434455);
 
@@ -221,6 +266,25 @@ img {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
+.socialmedialist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 32px;
+}
+.socialmediaitem {
+  width: 40px;
+  height: 40px;
+}
+.socialmediasvg {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  padding: 12px;
+  border-radius: 50%;
+}
+
 .teamitem {
   background: var(--WHITE, #fff);
 
@@ -235,7 +299,7 @@ img {
 }
 .teamworkercontainer {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 8px;
 }
 
 .teamparagraf {
@@ -274,6 +338,16 @@ img {
 .portfoliolistitem {
   background: var(--WHITE, #fff);
   width: calc((100% - 48px) / 3);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.portfoliolistitem:hover {
+  border: 1px solid var(--CLOUD, #f4f4fd);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .portfolioheader {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -318,9 +392,26 @@ img {
 }
 .footerlogo {
   display: inline-block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.footerlist {
+  display: flex;
+  gap: 120px;
+}
+.logofooter {
+  color: var(--WHITE, #fff);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
